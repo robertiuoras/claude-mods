@@ -1,0 +1,16 @@
+{
+  "name": "robertiuoras",
+  "owner": {
+    "name": "Robert Iuoras"
+  },
+  "metadata": {
+    "description": "Claude Code mods by Robert Iuoras: Flight Recorder shows where each turn's time goes, live."
+  },
+  "plugins": [
+    {
+      "name": "flight-recorder",
+      "source": "./flight-recorder",
+      "description": "A live flight recorder for each turn: see where Claude's time goes, tool by tool, as it happens."
+    }
+  ]
+}

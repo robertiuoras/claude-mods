@@ -1,0 +1,9 @@
+{
+  "name": "flight-recorder",
+  "version": "0.1.0",
+  "description": "A live flight recorder for each turn: see where Claude's time goes, tool by tool, as it happens.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "robertiuoras"
+  }
+}
