@@ -146,7 +146,7 @@ async function quickTurn($: Engine, rig: Rig, turnId: string) {
 
 const MOUNT = { plugin: PLUGIN, component: 'Pane' as const, requestId: 'flight', props: PANE_PROPS, viewport: VIEWPORT }
 
-test('draws the lane stats of a finished turn on terminal and desktop', async ($, on) => {
+test('draws the lane stats of a finished turn on terminal and desktop', LONG, async ($, on) => {
   const rig = stand(on)
   await $.session.start({ cwd: '/work', surface: 'terminal', isInteractive: true })
   await runTurn($, rig, 't1', 48_000)
