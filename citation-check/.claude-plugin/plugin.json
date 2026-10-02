@@ -1,0 +1,8 @@
+{
+  "name": "citation-check",
+  "version": "0.1.0",
+  "description": "When an answer cites links, one line names the ones Claude never opened.",
+  "author": {
+    "name": "robertiuoras"
+  }
+}
