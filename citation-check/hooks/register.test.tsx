@@ -72,7 +72,7 @@ test("counts a search hit apart, and a sub-agent's fetch as opened", async ($, o
   const rig = stand(on)
   rig.outputs.WebSearch = 'Links: [{"title":"Errata","url":"https://www.rfc-editor.org/rfc/rfc2606-errata"}]'
   await $.session.start({ cwd: '/work', surface: 'terminal', isInteractive: true })
-  await $.tool.call({ tool: 'WebSearch', query: 'rfc 2606 errata', tool_use_id: 's1' })
+  await $.tool.call({ tool: 'WebSearch', query: 'rfc 2606 errata', mode: 'standard', tool_use_id: 's1' })
   await fetch($, 'https://www.rfc-editor.org/rfc/rfc2606', 'sub-1')
 
   expect((await complete($, ANSWER)).text).toBe(

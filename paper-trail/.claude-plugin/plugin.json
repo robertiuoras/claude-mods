@@ -1,0 +1,9 @@
+{
+  "name": "paper-trail",
+  "version": "0.1.0",
+  "description": "A live pane of every file Claude changed this session, with lines added and removed, like git diff --stat as it happens.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "robertiuoras"
+  }
+}

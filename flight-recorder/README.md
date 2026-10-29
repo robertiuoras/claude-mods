@@ -23,8 +23,7 @@ Only the main conversation is drawn. Calls made inside sub-agents are counted in
 Needs Claude Code 2.1.287 or later.
 
 ```
-/plugin marketplace add robertiuoras/claude-mods
-/plugin install flight-recorder@robertiuoras
+/plugin install flight-recorder --marketplace robertiuoras/claude-mods
 ```
 
 Or try it from a folder: `claude --plugin-dir /path/to/flight-recorder`.

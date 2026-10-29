@@ -1,0 +1,9 @@
+{
+  "name": "safety-net",
+  "version": "0.1.0",
+  "description": "Stops the shell commands you can't take back: blocks wiping your disk or home folder, and asks you first before a hard reset, a force push to main or a dropped table.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "robertiuoras"
+  }
+}

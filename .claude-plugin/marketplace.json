@@ -4,13 +4,28 @@
     "name": "Robert Iuoras"
   },
   "metadata": {
-    "description": "Claude Code mods by Robert Iuoras: Flight Recorder shows where each turn's time goes, live."
+    "description": "Claude Code mods by Robert Iuoras: see where each turn's time goes, every file Claude changed, the links it never opened, and a safety net for commands you can't take back."
   },
   "plugins": [
     {
       "name": "flight-recorder",
       "source": "./flight-recorder",
       "description": "A live flight recorder for each turn: see where Claude's time goes, tool by tool, as it happens."
+    },
+    {
+      "name": "paper-trail",
+      "source": "./paper-trail",
+      "description": "A live pane of every file Claude changed this session, with lines added and removed."
+    },
+    {
+      "name": "safety-net",
+      "source": "./safety-net",
+      "description": "Blocks shell commands that wipe your disk or home folder, and asks you first before a hard reset, a force push to main or a dropped table."
+    },
+    {
+      "name": "citation-check",
+      "source": "./citation-check",
+      "description": "When an answer cites links, one line names the ones Claude never opened."
     }
   ]
 }

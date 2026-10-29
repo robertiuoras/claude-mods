@@ -10,6 +10,8 @@ citation-check: 7 links in this answer · 2 never opened: https://…, https://�
 
 Nothing appears when the answer has no links, or when Claude opened every one.
 
+![Citation Check under an answer written from memory](../media/citation-check.png)
+
 ## What counts as opened
 
 | The link | Shown as |
@@ -28,10 +30,10 @@ Links match loosely: capitals in the site name, `www.`, `http` or `https`, a `#s
 - A link written inside a shell command counts as opened even if the command only printed it. Text a command writes to a file through a heredoc (`<<EOF`) does not count.
 - In `claude -p`, the line arrives as a notice in `--output-format stream-json`; plain text output stays the answer alone.
 
-## Try it
+## Install
 
 Needs Claude Code 2.1.287 or later.
 
 ```
-claude --plugin-dir /path/to/citation-check
+/plugin install citation-check --marketplace robertiuoras/claude-mods
 ```
